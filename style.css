@@ -69,3 +69,7 @@ nav ul {
   gap: 1.2rem;
   margin: 1rem 0;
 }
+
+.social-media-links li a:hover {
+  font-size: x-large;
+}
