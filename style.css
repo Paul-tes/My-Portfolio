@@ -1,5 +1,5 @@
 * {
-  font-family: 'Poppins';
+  font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -29,14 +29,13 @@
   padding: 4%;
 }
 
-.section h1{
+.section h1 {
   font-size: 2.2rem;
   font-weight: 700; 
-  color: #172B4D;
+  color: #172b4d;
   margin-top: 2.1rem;
   margin-bottom: 1.8rem;
 }
-
 
 .section p {
   color: #344563;
@@ -48,7 +47,7 @@
 }
 
 nav h3 {
-  color: #7F8CFF;
+  color: #7f8cff;
 }
 
 nav ul {
@@ -61,7 +60,7 @@ nav ul {
 .connect-link {
   text-decoration: none;
   margin: 0.6rem 0;
-  color: #7F8CFF;
+  color: #7f8cff;
 }
 
 .social-media-links {
