@@ -29,7 +29,7 @@
   padding: 4%;
 }
 
-.section h1 {
+.section h1 , .about h2{
   font-size: 2.2rem;
   font-weight: 700;
   color: #172b4d;
@@ -37,7 +37,7 @@
   margin-bottom: 1.8rem;
 }
 
-.section p {
+.section p, .about p{
   color: #344563;
   margin-top: 1%;
 }
@@ -77,6 +77,7 @@ nav ul {
   padding: 1rem;
   margin-top: 5rem;
   display: grid;
+  gap: 5rem;
 }
 
 .action .card1 {
@@ -96,7 +97,7 @@ nav ul {
   color: #172B4D;
   font-style: normal;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .action .card1 ul {
@@ -129,7 +130,7 @@ nav ul {
   border-radius: 20%;
 }
 
-.action .card1 button {
+.action .card1 button{
   background: none;
 	color: #396DF2;
 	border: none;
@@ -144,7 +145,65 @@ nav ul {
   font-weight: 500;
 }
 
-.action .card1 button:hover{
+.action .card1 button:hover, .about button:hover{
   background-color: #396DF2;
   color: wheat;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.about button {
+  background: none;
+	color: #396DF2;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  width: 10rem;
+  padding: 0.6rem;
+  border: 1px solid #396DF2;
+  border-radius: 0.4rem;
+  font-weight: 500;
+}
+
+.about .skills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.about .skills li {
+  margin-top: 1rem;
+  padding: 0.6rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.about .skills ul li{
+  display: flex;
+  align-items: center;
+  background-color: #F7F7F9;
+  color: #253858;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.drop-down-btn {
+  margin-right: 1.2rem;
+  float: right;
+}
+
+.line-break {
+  background-color: #DFE1E6;
+  height: 1px;
+
 }
