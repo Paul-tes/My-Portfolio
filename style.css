@@ -29,7 +29,8 @@
   padding: 4%;
 }
 
-.section h1 , .about h2{
+.section h1,
+.about h2{
   font-size: 2.2rem;
   font-weight: 700;
   color: #172b4d;
@@ -37,7 +38,8 @@
   margin-bottom: 1.8rem;
 }
 
-.section p, .about p{
+.section p,
+.about p{
   color: #344563;
   margin-top: 1%;
 }
@@ -81,7 +83,7 @@ nav ul {
 }
 
 .action .card1 {
-  border: 1px solid #DFE1E6;
+  border: 1px solid #dfe1e6;
   border-radius: 1rem;
   padding: 1rem;
   display: flex;
@@ -94,7 +96,7 @@ nav ul {
 }
 
 .action .card1 h2 {
-  color: #172B4D;
+  color: #172b4d;
   font-style: normal;
   font-weight: 700;
   font-size: 2.5rem;
@@ -105,13 +107,13 @@ nav ul {
   gap: 1rem;
 }
 
-.action .card1 ul:first-of-type li:first-child{
+.action .card1 ul:first-of-type li:first-child {
   color: #344563;
   font-weight: 600;
 }
 
-.action .card1 ul:first-of-type li:not(:first-child){
-  color: #7A869A;
+.action .card1 ul:first-of-type li:not(:first-child) {
+  color: #7a869a;
   margin-left: 1rem;
   list-style: disc;
 }
@@ -120,24 +122,22 @@ nav ul {
   color: #344563;
 }
 
-.action .card1 ul:not(:first-of-type) li{
+.action .card1 ul:not(:first-of-type) li {
   list-style: none;
   font-size: 0.7rem;
   padding: 4px 12px;
   align-items: center;
-  color: #6070FF;
-  background-color: #EBEBFF;
+  color: #6070ff;
+  background-color: #ebebff;
   border-radius: 20%;
 }
 
-.action .card1 button{
+.action .card1 button {
   background: none;
-	color: #396DF2;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  color: #396DF2;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
   width: 8rem;
   padding: 0.6rem;
   border: 1px solid #396DF2;
@@ -146,7 +146,7 @@ nav ul {
 }
 
 .action .card1 button:hover, .about button:hover{
-  background-color: #396DF2;
+  background-color: #396df2;
   color: wheat;
 }
 
@@ -159,15 +159,13 @@ nav ul {
 
 .about button {
   background: none;
-	color: #396DF2;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  color: #396df2;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
   width: 10rem;
   padding: 0.6rem;
-  border: 1px solid #396DF2;
+  border: 1px solid #396df2;
   border-radius: 0.4rem;
   font-weight: 500;
 }
@@ -190,7 +188,7 @@ nav ul {
 .about .skills ul li{
   display: flex;
   align-items: center;
-  background-color: #F7F7F9;
+  background-color: #f7f7f9;
   color: #253858;
   gap: 0.5rem;
   font-weight: 500;
@@ -203,7 +201,7 @@ nav ul {
 }
 
 .line-break {
-  background-color: #DFE1E6;
+  background-color: #dfe1e6;
   height: 1px;
 
 }
