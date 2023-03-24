@@ -30,7 +30,7 @@
 }
 
 .section h1,
-.about h2{
+.about h2 {
   font-size: 2.2rem;
   font-weight: 700;
   color: #172b4d;
@@ -39,7 +39,7 @@
 }
 
 .section p,
-.about p{
+.about p {
   color: #344563;
   margin-top: 1%;
 }
@@ -134,18 +134,19 @@ nav ul {
 
 .action .card1 button {
   background: none;
-  color: #396DF2;
+  color: #396df2;
   font: inherit;
   cursor: pointer;
   outline: inherit;
   width: 8rem;
   padding: 0.6rem;
-  border: 1px solid #396DF2;
+  border: 1px solid #396df2;
   border-radius: 0.4rem;
   font-weight: 500;
 }
 
-.action .card1 button:hover, .about button:hover{
+.action .card1 button:hover, 
+.about button:hover {
   background-color: #396df2;
   color: wheat;
 }
@@ -185,7 +186,7 @@ nav ul {
   font-size: 1.2rem;
 }
 
-.about .skills ul li{
+.about .skills ul li {
   display: flex;
   align-items: center;
   background-color: #f7f7f9;
@@ -203,5 +204,4 @@ nav ul {
 .line-break {
   background-color: #dfe1e6;
   height: 1px;
-
 }
