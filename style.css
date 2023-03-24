@@ -1,3 +1,71 @@
-h1 {
-  text-align: center;
+* {
+  font-family: 'Poppins';
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url(./assets/images/header-background-mobile.png);
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+.container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+}
+
+.section {
+  background-image: url(./assets/images/header-shapes\ mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 4%;
+}
+
+.section h1{
+  font-size: 2.2rem;
+  font-weight: 700; 
+  color: #172B4D;
+  margin-top: 2.1rem;
+  margin-bottom: 1.8rem;
+}
+
+
+.section p {
+  color: #344563;
+  margin-top: 1%;
+}
+
+.section nav {
+  margin-top: 3%;
+}
+
+nav h3 {
+  color: #7F8CFF;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 7%;
+  margin-top: 2%;
+}
+
+.connect-link {
+  text-decoration: none;
+  margin: 0.6rem 0;
+  color: #7F8CFF;
+}
+
+.social-media-links {
+  display: flex;
+  gap: 1.2rem;
+  margin: 1rem 0;
 }
