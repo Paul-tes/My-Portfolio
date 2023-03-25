@@ -29,7 +29,8 @@
   padding: 4%;
 }
 
-.section h1 {
+.section h1,
+.about h2 {
   font-size: 2.2rem;
   font-weight: 700;
   color: #172b4d;
@@ -37,7 +38,8 @@
   margin-bottom: 1.8rem;
 }
 
-.section p {
+.section p,
+.about p {
   color: #344563;
   margin-top: 1%;
 }
@@ -71,4 +73,136 @@ nav ul {
 
 .social-media-links li a:hover {
   font-size: x-large;
+}
+
+.action {
+  padding: 1rem;
+  margin-top: 5rem;
+  display: grid;
+  gap: 5rem;
+}
+
+.action .card1 {
+  border: 1px solid #dfe1e6;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.action .card1 img {
+  justify-content: center;
+}
+
+.action .card1 h2 {
+  color: #172b4d;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.action .card1 ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.about .skills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.about .skills li {
+  margin-top: 1rem;
+  padding: 0.6rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.about .skills ul li {
+  display: flex;
+  align-items: center;
+  background-color: #f7f7f9;
+  color: #253858;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.action .card1 ul:not(:first-of-type) li {
+  list-style: none;
+  font-size: 0.7rem;
+  padding: 4px 12px;
+  align-items: center;
+  color: #6070ff;
+  background-color: #ebebff;
+  border-radius: 20%;
+}
+
+.action .card1 ul:first-of-type li:not(:first-child) {
+  color: #7a869a;
+  margin-left: 1rem;
+  list-style: disc;
+}
+
+.action .card1 ul:first-of-type li:first-child {
+  color: #344563;
+  font-weight: 600;
+}
+
+.action .card1 p {
+  color: #344563;
+}
+
+.about button {
+  background: none;
+  color: #396df2;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  width: 10rem;
+  padding: 0.6rem;
+  border: 1px solid #396df2;
+  border-radius: 0.4rem;
+  font-weight: 500;
+}
+
+.action .card1 button {
+  background: none;
+  color: #396df2;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  width: 8rem;
+  padding: 0.6rem;
+  border: 1px solid #396df2;
+  border-radius: 0.4rem;
+  font-weight: 500;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.about button:hover,
+.action .card1 button:hover {
+  background-color: #396df2;
+  color: white;
+  font-weight: 700;
+}
+
+.drop-down-btn {
+  margin-right: 1.2rem;
+  float: right;
+}
+
+.line-break {
+  background-color: #dfe1e6;
+  height: 1px;
 }
