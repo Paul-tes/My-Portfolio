@@ -145,12 +145,6 @@ nav ul {
   font-weight: 500;
 }
 
-.action .card1 button:hover, 
-.about button:hover {
-  background-color: #396df2;
-  color: wheat;
-}
-
 .about {
   display: flex;
   flex-direction: column;
@@ -169,6 +163,12 @@ nav ul {
   border: 1px solid #396df2;
   border-radius: 0.4rem;
   font-weight: 500;
+}
+
+.action .card1 button:hover,
+.about button:hover {
+  background-color: #396df2;
+  color: wheat;
 }
 
 .about .skills {
