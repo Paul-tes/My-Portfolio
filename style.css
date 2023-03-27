@@ -140,6 +140,9 @@ nav ul {
   color: #6070ff;
   background-color: #ebebff;
   border-radius: 20%;
+  float:left;
+  margin-left:2rem;
+  
 }
 
 .action .card1 ul:first-of-type li:not(:first-child) {
