@@ -38,6 +38,11 @@
   margin-bottom: 1.8rem;
 }
 
+footer p {
+  color: white;
+  text-align: center;
+}
+
 .section p,
 .about p {
   color: #344563;
@@ -102,6 +107,13 @@ nav ul {
   font-size: 2.5rem;
 }
 
+footer form ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
 .action .card1 ul {
   display: flex;
   gap: 1rem;
@@ -157,6 +169,20 @@ nav ul {
   color: #344563;
 }
 
+footer button {
+  font-weight: 700;
+  background: none;
+  color: #396df2;
+  font: inherit;
+  cursor: pointer;
+  width: 8rem;
+  padding: 0.6rem;
+  border: 1px solid #396df2;
+  border-radius: 0.4rem;
+  font-weight: 500;
+  background-color: #ffffff;
+}
+
 .about button {
   background: none;
   color: #396df2;
@@ -168,6 +194,11 @@ nav ul {
   border: 1px solid #396df2;
   border-radius: 0.4rem;
   font-weight: 500;
+}
+
+footer button:hover {
+  background-color: blue;
+  color: white;
 }
 
 .action .card1 button {
@@ -210,7 +241,7 @@ nav ul {
 footer {
   background-image: url(./assets/images/contact\ form\ shapes-mobile.png);
   background-size: auto;
-  background-color: #6070FF;
+  background-color: #6070ff;
   background-repeat: no-repeat;
   background-position-x: right;
   border-top-left-radius: 18%;
@@ -228,60 +259,23 @@ footer h3 {
   margin-left: 3rem;
 }
 
-footer p {
-  color: white;
-  text-align: center;
-}
-
 footer form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-footer form ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 1.5rem;
-}
-
 .input-text {
   display: block;
   width: 100%;
   height: 3rem;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
 }
 
 #msg {
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
   height: 12rem;
 }
 
-footer button {
-  font-weight: 700;
-  background: none;
-  color: #396df2;
-  font: inherit;
-  cursor: pointer;
-  width: 8rem;
-  padding: 0.6rem;
-  border: 1px solid #396df2;
-  border-radius: 0.4rem;
-  font-weight: 500;
-  background-color: #ffffff;
-}
-
-footer img {
-  width: 8rem;
-  display: flex;
-  margin: auto auto;
-  opacity: 0.8;
-}
-
-footer button:hover {
-  background-color: blue;
-  color: white;
-}
