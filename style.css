@@ -206,3 +206,81 @@ nav ul {
   background-color: #dfe1e6;
   height: 1px;
 }
+
+footer {
+  background-image: url(./assets/images/contact\ form\ shapes-mobile.png);
+  background-size: auto;
+  background-color: #396df2;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  border-top-left-radius: 18%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+footer h3 {
+  margin-top: 3rem;
+  color: white;
+  font-size: 2.4rem;
+  margin-left: 3rem;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
+
+footer form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer form ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.input-text {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+}
+
+#msg {
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  height: 12rem;
+}
+
+footer button {
+  font-weight: 700;
+  background: none;
+  color: #396df2;
+  font: inherit;
+  cursor: pointer;
+  width: 8rem;
+  padding: 0.6rem;
+  border: 1px solid #396df2;
+  border-radius: 0.4rem;
+  font-weight: 500;
+  background-color: #ffffff;
+}
+
+footer img {
+  width: 8rem;
+  display: flex;
+  margin: auto auto;
+}
+
+footer button:hover {
+  background-color: blue;
+  color: white;
+}
