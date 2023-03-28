@@ -210,7 +210,7 @@ nav ul {
 footer {
   background-image: url(./assets/images/contact\ form\ shapes-mobile.png);
   background-size: auto;
-  background-color: #396df2;
+  background-color: #6070FF;
   background-repeat: no-repeat;
   background-position-x: right;
   border-top-left-radius: 18%;
@@ -278,6 +278,7 @@ footer img {
   width: 8rem;
   display: flex;
   margin: auto auto;
+  opacity: 0.8;
 }
 
 footer button:hover {
