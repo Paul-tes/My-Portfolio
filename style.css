@@ -169,19 +169,6 @@ footer form ul {
   color: #344563;
 }
 
-footer button {
-  font-weight: 700;
-  background: none;
-  color: #396df2;
-  font: inherit;
-  cursor: pointer;
-  width: 8rem;
-  padding: 0.6rem;
-  border: 1px solid #396df2;
-  border-radius: 0.4rem;
-  background-color: white;
-}
-
 .about button {
   background: none;
   color: #396df2;
@@ -193,11 +180,6 @@ footer button {
   border: 1px solid #396df2;
   border-radius: 0.4rem;
   font-weight: 500;
-}
-
-footer button:hover {
-  background-color: blue;
-  color: white;
 }
 
 .action .card1 button {
@@ -243,7 +225,7 @@ footer {
   background-color: #6070ff;
   background-repeat: no-repeat;
   background-position-x: right;
-  border-top-left-radius: 18%;
+  border-top-left-radius: 5rem;
   display: flex;
   flex-direction: column;
   padding: 2rem;
@@ -252,7 +234,7 @@ footer {
 }
 
 footer h3 {
-  margin-top: 3rem;
+  margin-top: 4rem;
   color: white;
   font-size: 2.4rem;
   margin-left: 3rem;
@@ -262,18 +244,44 @@ footer form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 0.8rem;
 }
 
-.input-text {
+footer form input {
   display: block;
   width: 100%;
   height: 3rem;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
+  padding: 0.8rem;
 }
 
-#msg {
+footer form textarea {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   height: 12rem;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+}
+
+.submit-btn {
+  font-weight: 700;
+  background: none;
+  color: #6070ff;
+  cursor: pointer;
+  width: 8rem;
+  padding: 0.6rem;
+  border: 1px solid #396df2;
+  border-radius: 0.4rem;
+  background-color: white;
+}
+
+.submit-btn:hover {
+  background-color: blue;
+  color: white;
+}
+
+footer img {
+  width: 40%;
+  margin: auto auto;
 }
