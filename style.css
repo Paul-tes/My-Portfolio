@@ -179,8 +179,7 @@ footer button {
   padding: 0.6rem;
   border: 1px solid #396df2;
   border-radius: 0.4rem;
-  font-weight: 500;
-  background-color: #ffffff;
+  background-color: white;
 }
 
 .about button {
@@ -278,4 +277,3 @@ footer form {
   border-radius: 8px;
   height: 12rem;
 }
-
