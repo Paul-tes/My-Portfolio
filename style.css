@@ -96,6 +96,11 @@ nav ul {
   gap: 1rem;
 }
 
+footer img {
+  width: 40%;
+  margin: auto auto;
+}
+
 .action .card1 img {
   justify-content: center;
 }
@@ -279,9 +284,4 @@ footer form textarea {
 .submit-btn:hover {
   background-color: blue;
   color: white;
-}
-
-footer img {
-  width: 40%;
-  margin: auto auto;
 }
