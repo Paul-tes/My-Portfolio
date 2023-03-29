@@ -282,6 +282,17 @@ footer form textarea {
 }
 
 .submit-btn:hover {
-  background-color: blue;
+  background-color: #6070ff;
   color: white;
+}
+
+.submit-btn:enabled {
+  background-color: #2230d2;
+  color: white;
+}
+
+.submit-btn:disabled {
+  border: 1px solid #c1c7d0;
+  color: #5e6c84;
+  background-color: white;
 }
