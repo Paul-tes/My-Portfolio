@@ -116,8 +116,14 @@ You can deploy this project using:
 - GitHub: [@paul-tes](https://github.com/paul-tes)
 - LinkedIn: [paul](https://www.linkedin.com/in/paul-tesfaye-687820215/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+👤 **Yashodhi Chathurangi**
+
+- GitHub: https://github.com/yashodhicy/
+- Twitter: https://twitter.com/Yashichathucy
+- LinkedIn: https://www.linkedin.com/in/yashodhichathurangi/
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- FUTURE FEATURES -->
