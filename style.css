@@ -6,13 +6,18 @@
   list-style: none;
 }
 
+body {
+  background: #f4f5f7;
+}
+
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 130vh;
   background-image: url(./assets/images/header-background-mobile.png);
   background-repeat: no-repeat;
-  background-color: #fff;
+  background-color: white;
+  border-bottom-left-radius: 5rem;
 }
 
 .container .header {
@@ -29,13 +34,16 @@
   padding: 4%;
 }
 
+header .home-links {
+  display: none;
+}
+
 .section h1,
 .about h2 {
   font-size: 2.2rem;
   font-weight: 700;
   color: #172b4d;
   margin-top: 2.1rem;
-  margin-bottom: 1.8rem;
 }
 
 .contact-me p {
@@ -46,7 +54,7 @@
 .section p,
 .about p {
   color: #344563;
-  margin-top: 1%;
+  margin-bottom: 1rem;
 }
 
 .section nav {
@@ -89,6 +97,7 @@ nav ul {
 
 .action .card1 {
   border: 1px solid #dfe1e6;
+  background-color: white;
   border-radius: 1rem;
   padding: 1rem;
   display: flex;
@@ -103,6 +112,7 @@ nav ul {
 
 .action .card1 img {
   justify-content: center;
+  width: 100%;
 }
 
 .action .card1 h2 {
@@ -115,6 +125,8 @@ nav ul {
 .action .card1 ul {
   display: flex;
   gap: 1rem;
+  margin-top: 2%;
+  margin-bottom: 5%;
 }
 
 .about .skills {
@@ -122,7 +134,7 @@ nav ul {
   flex-direction: column;
   gap: 0.5rem;
   margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 15rem;
 }
 
 .about .skills li {
@@ -167,19 +179,6 @@ nav ul {
   color: #344563;
 }
 
-.about button {
-  background: none;
-  color: #396df2;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-  width: 10rem;
-  padding: 0.6rem;
-  border: 1px solid #396df2;
-  border-radius: 0.4rem;
-  font-weight: 500;
-}
-
 .action .card1 button {
   background: none;
   color: #396df2;
@@ -193,18 +192,35 @@ nav ul {
   font-weight: 500;
 }
 
+.btn {
+  background: none;
+  color: #396df2;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  width: 10rem;
+  padding: 0.6rem;
+  border: 1px solid #396df2;
+  border-radius: 0.4rem;
+  font-weight: 500;
+}
+
 .about {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 1rem;
+  background-color: white;
+  padding: 1.5rem;
 }
 
 .about button:hover,
 .action .card1 button:hover {
-  background-color: #396df2;
+  background-color: #6070ff;
   color: white;
   font-weight: 700;
+}
+
+.btn:visited {
+  background-color: #2230d2;
+  color: white;
+  text-decoration: none;
 }
 
 .drop-down-btn {
@@ -232,10 +248,9 @@ nav ul {
 }
 
 .contact-me h3 {
-  margin-top: 4rem;
   color: white;
   font-size: 2.4rem;
-  margin-left: 3rem;
+  margin: auto auto;
 }
 
 .contact-me form {
@@ -286,4 +301,152 @@ nav ul {
 .contact-me .submit-btn:visited {
   color: white;
   background-color: #2230d2;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .container {
+    background-image: url(./assets/images/header\ background\ shape-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .container .header {
+    padding: 0.5rem;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .header .log {
+    margin-left: 5rem;
+    margin-top: 0;
+  }
+
+  .header .menue-btn {
+    display: none;
+  }
+
+  .header .home-links {
+    display: flex;
+    margin-right: 9rem;
+    justify-content: space-between;
+  }
+
+  .home-links li a {
+    text-decoration: none;
+    color: #344563;
+    font-size: 1rem;
+  }
+
+  .section {
+    background-image: url(./assets/images/Header\ bg@2x.png);
+    background-size: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+  }
+
+  .section div {
+    margin: 10%;
+  }
+
+  .section div h1 {
+    margin-bottom: 0.3rem;
+    font-size: 48px;
+    line-height: 3.2rem;
+    margin-top: 10rem;
+  }
+
+  .section div p {
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    font-size: 20px;
+  }
+
+  .connect-link {
+    font-size: 1.2rem;
+  }
+
+  .social-media-links {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .action {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: auto;
+  }
+
+  .action .card1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    padding: 12px;
+    gap: 84px;
+  }
+
+  .contact-me img {
+    display: none;
+  }
+
+  .action .card1 img {
+    width: 60%;
+    margin: 0;
+  }
+
+  .about div:first-child {
+    width: 40%;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+
+  .about div:nth-child(2) {
+    width: 60%;
+    margin-right: 4rem;
+    color: #344563;
+  }
+
+  .action .card1 div {
+    max-width: 50%;
+    margin: 0;
+  }
+
+  .order-1 {
+    order: 1;
+  }
+
+  .about {
+    padding: 34px 64px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto auto;
+    border-top-right-radius: 95px;
+    margin-top: 75px;
+  }
+
+  .about .skills ul li {
+    max-width: 7.65rem;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-right: 1rem;
+    min-width: 122px;
+  }
+
+  .contact-me {
+    padding-left: 33%;
+    padding-right: 33%;
+    justify-content: center;
+    margin-top: -75px;
+  }
+
+  .contact-me .submit-btn {
+    margin: auto auto;
+  }
 }
