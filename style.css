@@ -396,9 +396,10 @@ nav ul {
     max-width: 50%;
     margin: 0;
   }
-.order-1 {
-  order: 1;
-}
+
+  .order-1 {
+    order: 1;
+  }
 
   .about {
     display: flex;
