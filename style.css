@@ -450,3 +450,16 @@ nav ul {
     margin: auto auto;
   }
 }
+
+/* animation-part */
+.logo {
+  border: 1px solid blue;
+  animation: bounce-in-right 5s ease infinite
+}
+
+@keyframes bounce-in-right {
+  0%{
+      opacity:0;
+      transform: translateX(2000px);
+  }
+}
