@@ -72,7 +72,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Comming Soon
+- [my-portfolio](https://paul-tes.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,7 +103,7 @@ To run tests, follow the following procedures:
 - right Click + open With + chrome
 ### Deployment
 You can deploy this project using:
-- N/A
+- GitHub pages
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
