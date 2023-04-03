@@ -38,6 +38,19 @@ header .home-links {
   display: none;
 }
 
+.section > img{
+  border: 2px dashed #7f8cff;
+  border-radius: 1rem;
+  width: 19.33rem;
+  padding: 1.5rem;
+  margin: auto 1rem;
+  opacity: 0.8;
+}
+
+section div {
+  padding: 1rem;
+}
+
 .section h1,
 .about h2 {
   font-size: 2.2rem;
@@ -316,6 +329,7 @@ nav ul {
     padding: 0.5rem;
     width: 100%;
     margin-bottom: 3rem;
+    position: fixed;
   }
 
   .header .log {
@@ -345,6 +359,16 @@ nav ul {
     height: 100%;
     background-repeat: no-repeat;
     margin: 1rem;
+  }
+
+  .section > img{
+    border: 2px dashed #396df2;
+    border-radius: 25rem;
+    width: 14rem;
+    float: right;
+    margin-right: 8rem;
+    margin-top: 12rem;
+    margin-left: 1rem;
   }
 
   .section div {
