@@ -73,6 +73,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [my-portfolio](https://paul-tes.github.io/)
+- [walkthrough video](https://www.loom.com/share/0dde14078ec74af98a961b8009d3639f)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
