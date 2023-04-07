@@ -316,6 +316,7 @@ nav ul {
     padding: 0.5rem;
     width: 100%;
     margin-bottom: 3rem;
+    position: fixed;
   }
 
   .header .log {
