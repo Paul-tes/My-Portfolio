@@ -18,6 +18,7 @@ body {
   background-repeat: no-repeat;
   background-color: white;
   border-bottom-left-radius: 5rem;
+  height: 40rem;
 }
 
 .container .header {
@@ -27,16 +28,12 @@ body {
   padding: 5%;
 }
 
-<<<<<<< HEAD
 .container .header nav button {
   background: none;
   color: inherit;
   border: none;
 }
 
-
-=======
->>>>>>> parent of f0e5d7d (fixed header-posion)
 .section {
   background-image: url(./assets/images/header-shapes\ mobile.png);
   background-size: cover;
