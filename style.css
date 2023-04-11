@@ -34,6 +34,63 @@ body {
   border: none;
 }
 
+.mobile-menue-active {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background: #6070FF;
+  mix-blend-mode:multiply;
+  height: 120%;
+  background-image: url('./assets/images/Shape.png');
+  background-repeat: no-repeat;
+  background-position: 50% 99%;
+  display: none;
+  z-index: 1;
+}
+
+.display-menue {
+  display: block;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.close-btn {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  float: right;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.mobile-menue-link {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 5rem;
+  margin-left: 2rem;
+  font-size: 1.9rem;
+}
+
+.mobile-menue-link li > a{
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* .container > *:not(.header, .section) {
+  display: none;
+}  */
+
+.blur {
+  filter: blur(6px);
+}
+
 .section {
   background-image: url(./assets/images/header-shapes\ mobile.png);
   background-size: cover;
