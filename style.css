@@ -26,6 +26,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 5%;
+  margin-bottom: 3rem;
 }
 
 .container .header nav button {
@@ -33,7 +34,6 @@ body {
   color: inherit;
   border: none;
 }
-
 
 .section {
   background-image: url(./assets/images/header-shapes\ mobile.png);
@@ -52,6 +52,7 @@ header .home-links {
   font-weight: 700;
   color: #172b4d;
   margin-top: 2.1rem;
+  margin-right: 5rem;
 }
 
 .contact-me p {
@@ -98,7 +99,7 @@ nav ul {
 
 .action {
   padding: 1rem;
-  margin-top: 15rem;
+  margin-top: 12rem;
   display: grid;
   gap: 5rem;
 }
