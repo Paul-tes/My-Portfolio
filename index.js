@@ -13,8 +13,7 @@ const btnEvent = () => {
   const se1 = document.querySelector('#contact');
   const se2 = document.querySelector('#action');
   const se3 = document.querySelector('#about');
-  if (mobMenue.classList.contains('display-menue'))
-  {
+  if (mobMenue.classList.contains('display-menue')) {
     menueBtn.classList.remove('hidden');
     logo.classList.remove('hidden');
     mobMenue.classList.remove('display-menue');
@@ -22,8 +21,7 @@ const btnEvent = () => {
     se1.classList.remove('display-none');
     se2.classList.remove('display-none');
     se3.classList.remove('display-none');
-  } else 
-  {
+  } else {
     menueBtn.classList.add('hidden');
     logo.classList.add('hidden');
     mobTop.classList.add('blur');
@@ -32,7 +30,7 @@ const btnEvent = () => {
     se2.classList.add('display-none');
     se3.classList.add('display-none');
   }
-}
+};
 
 // events
 menue.addEventListener('click', btnEvent);
