@@ -25,7 +25,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 5%;
-  margin-bottom: 3rem;
 }
 
 <<<<<<< HEAD
@@ -34,6 +33,7 @@ body {
   color: inherit;
   border: none;
 }
+
 
 =======
 >>>>>>> parent of f0e5d7d (fixed header-posion)
@@ -54,7 +54,6 @@ header .home-links {
   font-weight: 700;
   color: #172b4d;
   margin-top: 2.1rem;
-  margin-right: 5rem;
 }
 
 .contact-me p {
@@ -101,11 +100,7 @@ nav ul {
 
 .action {
   padding: 1rem;
-<<<<<<< HEAD
   margin-top: 12rem;
-=======
-  margin-top: 5rem;
->>>>>>> parent of f0e5d7d (fixed header-posion)
   display: grid;
   gap: 5rem;
 }
