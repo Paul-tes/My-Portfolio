@@ -27,7 +27,27 @@ body {
   padding: 5%;
 }
 
-.container .header nav button {
+.action .card1 button {
+  background: none;
+  color: #396df2;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  width: 8rem;
+  padding: 0.6rem;
+  border: 1px solid #396df2;
+  border-radius: 0.4rem;
+  font-weight: 500;
+}
+
+.about button:hover,
+.action .card1 button:hover {
+  background-color: #6070ff;
+  color: white;
+  font-weight: 700;
+}
+
+#menue-btn {
   background: none;
   color: inherit;
   border: none;
@@ -240,19 +260,6 @@ nav ul {
   color: #344563;
 }
 
-.action .card1 button {
-  background: none;
-  color: #396df2;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-  width: 8rem;
-  padding: 0.6rem;
-  border: 1px solid #396df2;
-  border-radius: 0.4rem;
-  font-weight: 500;
-}
-
 .btn {
   background: none;
   color: #396df2;
@@ -269,13 +276,6 @@ nav ul {
 .about {
   background-color: white;
   padding: 1.5rem;
-}
-
-.about button:hover,
-.action .card1 button:hover {
-  background-color: #6070ff;
-  color: white;
-  font-weight: 700;
 }
 
 .btn:visited {

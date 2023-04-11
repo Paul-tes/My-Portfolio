@@ -1,32 +1,33 @@
-let menue = document.querySelector('.menue-btn')
-let closeBtn = document.querySelector('.close-btn');
-let prot = document.querySelector('#portfolio-from-mob');
-let about = document.querySelector('#about-from-mob');
-let cont = document.querySelector('#contact-from-mob');
+const menue = document.querySelector('.menue-btn');
+const closeBtn = document.querySelector('.close-btn');
+const prot = document.querySelector('#portfolio-from-mob');
+const about = document.querySelector('#about-from-mob');
+const cont = document.querySelector('#contact-from-mob');
 
 // event fucntion
-const btnEvent = ()=> {
-  let logo = document.querySelector('#logo');
-  let menue_btn = document.querySelector('.menue-btn');
-  let mob_top = document.querySelector('#section-top');
-  let mobile_menue = document.querySelector('.mobile-menue-active');
-  let se1 = document.querySelector('#contact');
-  let se2 = document.querySelector('#action');
-  let se3 = document.querySelector('#about');
-  if(mobile_menue.classList.contains('display-menue'))
+const btnEvent = () => {
+  const logo = document.querySelector('#logo');
+  const menueBtn = document.querySelector('.menue-btn');
+  const mobTop = document.querySelector('#section-top');
+  const mobMenue = document.querySelector('.mobile-menue-active');
+  const se1 = document.querySelector('#contact');
+  const se2 = document.querySelector('#action');
+  const se3 = document.querySelector('#about');
+  if (mobMenue.classList.contains('display-menue'))
   {
-    menue_btn.classList.remove('hidden');
+    menueBtn.classList.remove('hidden');
     logo.classList.remove('hidden');
-    mobile_menue.classList.remove('display-menue');
-    mob_top.classList.remove('blur');
+    mobMenue.classList.remove('display-menue');
+    mobTop.classList.remove('blur');
     se1.classList.remove('display-none');
     se2.classList.remove('display-none');
     se3.classList.remove('display-none');
-  } else {
-    menue_btn.classList.add('hidden');
+  } else 
+  {
+    menueBtn.classList.add('hidden');
     logo.classList.add('hidden');
-    mob_top.classList.add('blur');
-    mobile_menue.classList.add('display-menue');
+    mobTop.classList.add('blur');
+    mobMenue.classList.add('display-menue');
     se1.classList.add('display-none');
     se2.classList.add('display-none');
     se3.classList.add('display-none');
