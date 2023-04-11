@@ -5,7 +5,7 @@ const about = document.querySelector('#about-from-mob');
 const cont = document.querySelector('#contact-from-mob');
 
 // event fucntion
-const btnEvent = () => {
+function btnEvent() {
   const logo = document.querySelector('#logo');
   const menueBtn = document.querySelector('.menue-btn');
   const mobTop = document.querySelector('#section-top');
@@ -30,7 +30,7 @@ const btnEvent = () => {
     se2.classList.add('display-none');
     se3.classList.add('display-none');
   }
-};
+}
 
 // events
 menue.addEventListener('click', btnEvent);
