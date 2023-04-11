@@ -11,19 +11,28 @@
   <title>Paulos Tesfaye's Portfolio webPage</title>
 </head>
 <body>
-  <div class="container" id="portfolio">
+  <div class="container " id="portfolio">
     <header class="header">
-      <a href="#"><img src="./assets/images/icons8-p-key-48.png" alt="logo" class="log"></a>
-      <nav class="mobile-menue-active mobile-menue">
-        <button><img class="menue-btn" src="./assets/images/Union.png" alt="menue icon"></button>
+      <a href="#"><img src="./assets/images/icons8-p-key-48.png" alt="logo" id="logo"></a> <!--hidden-->
+      <nav>
+        <button id="menue-btn"><img class="menue-btn" src="./assets/images/Union.png" alt="menue icon"></button>
         <ul class="home-links">
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+
+      <div class="mobile-menue-active"> <!--display-menue-->
+        <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        <ul class="mobile-menue-link">
+          <li><a href="#portfolio" id="portfolio-from-mob">Portfolio</a></li>
+          <li><a href="#about" id="about-from-mob">About</a></li>
+          <li><a href="#contact" id="contact-from-mob">Contact</a></li>
+        </ul>
+      </div>
     </header>
-    <section class="section">
+    <section class="section" id="section-top">
       <div>
         <h1>I’m Paul. <br>
           Glad to see you!</h1>
@@ -154,7 +163,7 @@
       <h3>Contact me</h3>
       <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
         I’d love to help with it!</p>
-      <form action="https://formspree.io/f/xvonwply" method="post"> 
+      <form action="#" method="post">  <!--https://formspree.io/f/xvonwply-->
         <label for="name"></label>
         <input type="text" id="name" name="user_name" required placeholder="Paul Tesfaye" maxlength="30"/>
         <label for="email"></label>
@@ -166,5 +175,7 @@
       <img src="./assets/images/Shape.png" alt="end of contact">
     </section>
   </div>
+
+  <script src="./index.js"></script>
 </body>
 </html>

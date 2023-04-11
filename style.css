@@ -13,12 +13,11 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  height: 130vh;
+  height: 80vh;
   background-image: url(./assets/images/header-background-mobile.png);
   background-repeat: no-repeat;
   background-color: white;
   border-bottom-left-radius: 5rem;
-  height: 40rem;
 }
 
 .container .header {
@@ -28,12 +27,85 @@ body {
   padding: 5%;
 }
 
-.container .header nav button {
+.action .card1 button {
+  background: none;
+  color: #396df2;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  width: 8rem;
+  padding: 0.6rem;
+  border: 1px solid #396df2;
+  border-radius: 0.4rem;
+  font-weight: 500;
+}
+
+.about button:hover,
+.action .card1 button:hover {
+  background-color: #6070ff;
+  color: white;
+  font-weight: 700;
+}
+
+#menue-btn {
   background: none;
   color: inherit;
   border: none;
 }
 
+.mobile-menue-active {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #6070ff;
+  mix-blend-mode: multiply;
+  height: 100%;
+  background-image: url('./assets/images/Shape.png');
+  background-repeat: no-repeat;
+  background-position: 50% 99%;
+  display: none;
+  z-index: 1;
+}
+
+.display-menue {
+  display: block;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.mobile-menue-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 4rem;
+  margin-left: 2rem;
+  font-size: 1.9rem;
+}
+
+.mobile-menue-link li > a {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.blur {
+  filter: blur(6px);
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  float: right;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
 
 .section {
   background-image: url(./assets/images/header-shapes\ mobile.png);
@@ -52,6 +124,7 @@ header .home-links {
   font-weight: 700;
   color: #172b4d;
   margin-top: 2.1rem;
+  margin-right: 8rem;
 }
 
 .contact-me p {
@@ -98,7 +171,7 @@ nav ul {
 
 .action {
   padding: 1rem;
-  margin-top: 15rem;
+  margin-top: 12rem;
   display: grid;
   gap: 5rem;
 }
@@ -187,19 +260,6 @@ nav ul {
   color: #344563;
 }
 
-.action .card1 button {
-  background: none;
-  color: #396df2;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-  width: 8rem;
-  padding: 0.6rem;
-  border: 1px solid #396df2;
-  border-radius: 0.4rem;
-  font-weight: 500;
-}
-
 .btn {
   background: none;
   color: #396df2;
@@ -216,13 +276,6 @@ nav ul {
 .about {
   background-color: white;
   padding: 1.5rem;
-}
-
-.about button:hover,
-.action .card1 button:hover {
-  background-color: #6070ff;
-  color: white;
-  font-weight: 700;
 }
 
 .btn:visited {
@@ -310,6 +363,10 @@ nav ul {
   color: white;
   background-color: #2230d2;
   font-weight: 700;
+}
+
+.display-none {
+  display: none;
 }
 
 @media (min-width: 768px) {
