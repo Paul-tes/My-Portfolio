@@ -49,7 +49,7 @@
     </section>
 
     <div class="action" id="action">
-      <section class="card1">
+     <section class="card1 card-A">
         <img src="./assets/images/Snapshoot Portfolio_1.png" alt="phto-tonic">
         <div>
           <h2>Tonic</h2>
@@ -64,12 +64,12 @@
             <li>CSS</li>
             <li>JavaScript</li>
           </ul>
-          <button class="btn">See project</button>
+          <button class="btn" data-modal-target="card-A">See project</button>
         </div>
       </section>
-
+ <!-- 
       <section class="card1">
-        <img src="./assets/images/Snapshoot Portfolio(3).png" alt="phorfoio-snap" class="order-1">
+        <img class="card-image" src="./assets/images/Snapshoot Portfolio(3).png" alt="phorfoio-snap" class="order-1">
         <div>
           <h2>Multi-Post Stories</h2>
           <ul>
@@ -89,7 +89,7 @@
       </section>
 
       <section class="card1">
-        <img src="./assets/images/Snapshoot Portfolio.png" alt="phto-tonic">
+        <img class="card-image" src="./assets/images/Snapshoot Portfolio.png" alt="phto-tonic">
         <div>
           <h2>Facebook 360</h2>
           <ul>
@@ -125,7 +125,7 @@
           </ul>
           <button class="btn">See project</button>
         </div>
-      </section>
+      </section> -->
     </div>
 
     <div class="about" id="about">
@@ -140,7 +140,7 @@
             <li><a href="paulasca8462@gmail.com"><img src="./assets/images/main_iocn.svg" alt="Email"></a></li>
             <li><a href="#"><img src="./assets/images/Vector(4).svg" alt="feedback"></a></li>
           </ul>
-        <button class="btn">Get my resume</button>
+        <button class="get-my-resume-btn">Get my resume</button>
       </div>
       <div>
         <ul class="skills">
@@ -176,6 +176,34 @@
     </section>
   </div>
 
+  <div class="modal" id="detail-modal"></div>
+    <div class="modal-content">
+      <header class="modal-head">
+        <h2 class="modal-header-h2">Tonic</h2>
+        <button modal-close-btn><span class="modal-close">&times;</span></button>
+      </header>
+    <ul class="modal-first-ul">
+      <li class="modal-first-ul-first-child">CANOPY</li>
+      <li class="modal-first-ul-child">Back End Dev</li>
+      <li class="modal-first-ul-child">2023</li>
+    </ul>
+    <img src="./assets/images/Snapshoot Portfolio_modal.png" alt="phto-tonic">
+    <div class="modal-seciotn-bottom">
+      <div class="modal-paragraphs">
+        <p class="modal-content-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br> <br> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</p>      </div>
+      <div class="tech-and-btns">
+    <ul class="modal-tech-list">
+      <li class="modal-tech-list-item">HTML</li>
+      <li class="modal-tech-list-item">CSS</li>
+      <li class="modal-tech-list-item">JavaScript</li>
+    </ul>
+    <div class="modal-buttons">
+      <button class="modal-seeLive-btn"><span>See live</span> <img id="see-live-icon" src="./assets/images/Icon - Export.svg" alt="see-live-icon"></button>
+      <button class="modal-seeSource-btn"><span>See source</span> <i class="fa-brands fa-github"></i></button>
+    </div>
+      </div>
+    </div>
+  </div>
   <script src="./index.js"></script>
 </body>
 </html>

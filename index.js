@@ -38,3 +38,89 @@ closeBtn.addEventListener('click', btnEvent);
 prot.addEventListener('click', btnEvent);
 about.addEventListener('click', btnEvent);
 cont.addEventListener('click', btnEvent);
+
+// Refactoring code
+
+// cards objects
+
+const cards = [
+  {
+    title: 'Tonic',
+    name: 'CANOPY',
+    desc1: 'Back End Dev',
+    desc2: '2023',
+    img: './assets/images/Snapshoot Portfolio_1.png',
+    alt: 'phto-tonic',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tech1: 'HTML',
+    tech2: 'CSS',
+    tech3: 'JavaScript',
+    btn: 'See project',
+  },
+  {
+    title: 'Multi-Post Stories',
+    name: 'CANOPY',
+    desc1: 'Back End Dev',
+    desc2: '2023',
+    img: './assets/images/Snapshoot Portfolio(3).png',
+    alt: 'phorfoio-snap',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tech1: 'HTML',
+    tech2: 'CSS',
+    tech3: 'JavaScript',
+    btn: 'See project',
+  },
+  {
+    title: 'Facebook 360',
+    name: 'FACEBOOK',
+    desc1: 'Back End Dev',
+    desc2: '2023',
+    img: './assets/images/Snapshoot Portfolio.png',
+    alt: 'phto-tonic',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tech1: 'HTML',
+    tech2: 'CSS',
+    tech3: 'JavaScript',
+    btn: 'See project',
+  },
+  {
+    title: 'Uber Navigation',
+    name: 'Uber',
+    desc1: 'Back End Dev',
+    desc2: '2023',
+    img: './assets/images/Snapshoot Portfolio(1).png',
+    alt: 'phto-uber',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tech1: 'HTML',
+    tech2: 'CSS',
+    tech3: 'JavaScript',
+    btn: 'See project',
+  },
+];
+
+// action is a container of all projects.
+const action = document.querySelector('#action');
+
+// populating cards dynamically using the array object.
+for (let i = 0; i < cards.length; i += 1) {
+  const section = document.createElement('section');
+  section.innerHTML = `
+<img src="${cards[i].img}" alt="${cards[i].alt}">
+<div>
+  <h2>${cards[i].title}</h2>
+  <ul>
+    <li>${cards[i].name}</li>
+    <li>${cards[i].desc1}</li>
+    <li>${cards[i].desc2}</li>
+  </ul>
+  <p>${cards[i].description}</p>
+  <ul id="lang">
+    <li>${cards[i].tech1}</li>
+    <li>${cards[i].tech2}</li>
+    <li>${cards[i].tech3}</li>
+  </ul>
+  <button class="btn">${cards[i].btn}</button>
+</div>`;
+  section.classList.add('card1');
+  action.appendChild(section);
+}
