@@ -101,7 +101,7 @@ const cards = [
 // action is a container of all projects.
 const action = document.querySelector('#action');
 
-// populating cards dynamically using the array object.
+// populating cards dynamically using the array object
 for (let i = 0; i < cards.length; i += 1) {
   const section = document.createElement('section');
   section.innerHTML = `
@@ -123,4 +123,48 @@ for (let i = 0; i < cards.length; i += 1) {
 </div>`;
   section.classList.add('card1');
   action.appendChild(section);
+}
+
+// Modals
+const body = document.getElementsByName('body');
+console.log(body);
+const openModalBtn = document.querySelectorAll('.btn');
+
+const openModal = (target) => {
+  const modal = document.createElement('div');
+  modal.innerHTML = `
+  <div class="modal-content">
+    <header class="modal-head">
+      <h2 class="modal-header-h2">${cards[target].title}</h2>
+      <button modal-close-btn><span class="modal-close">&times;</span></button>
+    </header>
+    <ul class="modal-first-ul">
+      <li class="modal-first-ul-first-child">${cards[target].name}</li>
+      <li class="modal-first-ul-child">${cards[target].desc1}</li>
+      <li class="modal-first-ul-child">${cards[target].desc2}</li>
+    </ul>
+    <img src="${cards[target].img}" alt="${cards[target].alt}">
+    <div class="modal-seciotn-bottom">
+      <div class="modal-paragraphs">
+        <p class="modal-content-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br> <br> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</p>      </div>
+      <div class="tech-and-btns">
+    <ul class="modal-tech-list">
+      <li class="modal-tech-list-item">${cards[target].tech1}</li>
+      <li class="modal-tech-list-item">${cards[target].tech2}</li>
+      <li class="modal-tech-list-item">${cards[target].tech3}</li>
+    </ul>
+    <div class="modal-buttons">
+      <button class="modal-seeLive-btn"><span>See live</span> <img id="see-live-icon" src="./assets/images/Icon - Export.svg" alt="see-live-icon"></button>
+      <button class="modal-seeSource-btn"><span>See source</span> <i class="fa-brands fa-github"></i></button>
+    </div>
+  </div>
+  </div>
+    `;
+  modal.setAttribute('id', 'detail-modal');
+  modal.className.add('modal');
+  body.appendChild(modal);
+};
+
+for (let i = 0; i < openModalBtn.length; i += 1) {
+  openModalBtn.addEventListener('click', openModal(i));
 }

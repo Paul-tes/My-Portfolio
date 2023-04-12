@@ -384,7 +384,6 @@ nav ul {
 
 /* modal backgrond */
 .modal {
-  display: none;
   position: fixed;
   padding-top: 100px;
   left: 0;
@@ -399,7 +398,6 @@ nav ul {
 /* Modal Content */
 .modal-content {
   display: flex;
-  display: none;
   position: fixed;
   background-color: #fefefe;
   margin-top: 1rem;
@@ -447,10 +445,6 @@ nav ul {
 }
 
 @media (min-width: 768px) {
-  .modal {
-    display: none;
-  }
-
   .modal-content {
     height: 90%;
     width: 70%;
@@ -458,7 +452,6 @@ nav ul {
     margin-top: 3%;
     overflow: scroll;
     display: flex;
-    display: none;
   }
 
   .modal-content-p2 {
