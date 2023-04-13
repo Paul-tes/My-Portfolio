@@ -25,6 +25,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 5%;
+  background-color: white;
 }
 
 .action .card1 button,
