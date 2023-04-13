@@ -181,3 +181,17 @@ function isLowercase(email) {
   const nonLowercaseLetters = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
   return !nonLowercaseLetters.test(email);
 }
+
+form.addEventListener('submit', (event) => {
+  const email = form.elements[2];
+  if (isLowercase(email.value)) {
+    event.preventDefault();
+    const error = document.querySelector('#error-message');
+    const errorMsg = document.querySelector('#error-message span');
+    const email = document.querySelector('#mail');
+    email.style.border = '1px solid red';
+    errorMsg.innerText = 'email must be lower case characters';
+    error.style.visibility = 'visible';
+    console.log(errorMsg);
+  }
+});
