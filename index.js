@@ -38,3 +38,58 @@ closeBtn.addEventListener('click', btnEvent);
 prot.addEventListener('click', btnEvent);
 about.addEventListener('click', btnEvent);
 cont.addEventListener('click', btnEvent);
+
+const cards = [
+  {
+    title: 'Tonic',
+    name: 'CANOPY',
+    desc1: 'Back End Dev',
+    desc2: '2023',
+    img: './assets/images/Snapshoot Portfolio_1.png',
+    alt: 'phto-tonic',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tech1: 'HTML',
+    tech2: 'CSS',
+    tech3: 'JavaScript',
+    btn: 'See project',
+  },
+  {
+    title: 'Multi-Post Stories',
+    name: 'CANOPY',
+    desc1: 'Back End Dev',
+    desc2: '2023',
+    img: './assets/images/Snapshoot Portfolio(3).png',
+    alt: 'phorfoio-snap',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tech1: 'HTML',
+    tech2: 'CSS',
+    tech3: 'JavaScript',
+    btn: 'See project',
+  },
+  {
+    title: 'Facebook 360',
+    name: 'FACEBOOK',
+    desc1: 'Back End Dev',
+    desc2: '2023',
+    img: './assets/images/Snapshoot Portfolio.png',
+    alt: 'phto-tonic',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tech1: 'HTML',
+    tech2: 'CSS',
+    tech3: 'JavaScript',
+    btn: 'See project',
+  },
+  {
+    title: 'Uber Navigation',
+    name: 'Uber',
+    desc1: 'Back End Dev',
+    desc2: '2023',
+    img: './assets/images/Snapshoot Portfolio(1).png',
+    alt: 'phto-uber',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tech1: 'HTML',
+    tech2: 'CSS',
+    tech3: 'JavaScript',
+    btn: 'See project',
+  },
+];
