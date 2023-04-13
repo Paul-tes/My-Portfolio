@@ -10,6 +10,24 @@ body {
   background: #f4f5f7;
 }
 
+#error-message {
+  display: flex;
+  visibility: hidden;
+  color: #d8000c;
+  background-color: #ffbaba;
+  gap: 0.5rem;
+  width: fit-content;
+}
+
+#error-message i {
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+#error-message span {
+  margin-right: 5px;
+}
+
 .container {
   display: flex;
   flex-direction: column;

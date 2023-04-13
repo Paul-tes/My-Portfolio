@@ -174,3 +174,5 @@ for (let i = 0; i < openModalBtn.length; i += 1) {
     openModal(i);
   });
 }
+
+// form validation
