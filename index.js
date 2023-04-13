@@ -176,3 +176,8 @@ for (let i = 0; i < openModalBtn.length; i += 1) {
 }
 
 // form validation
+const form = document.querySelector('#contact-me-form');
+function isLowercase(email) {
+  const nonLowercaseLetters = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+  return !nonLowercaseLetters.test(email);
+}
