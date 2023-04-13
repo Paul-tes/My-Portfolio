@@ -183,7 +183,7 @@ function isLowercase(email) {
 }
 
 form.addEventListener('submit', (event) => {
-  const email = form.elements[2];
+  const email = form.elements[1];
   if (isLowercase(email.value)) {
     event.preventDefault();
     const error = document.querySelector('#error-message');
@@ -192,6 +192,5 @@ form.addEventListener('submit', (event) => {
     email.style.border = '1px solid red';
     errorMsg.innerText = 'email must be lower case characters';
     error.style.visibility = 'visible';
-    console.log(errorMsg);
   }
 });
