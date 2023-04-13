@@ -93,3 +93,29 @@ const cards = [
     btn: 'See project',
   },
 ];
+
+// action is a container of all projects.
+const action = document.querySelector('#action');
+// populating cards dynamically using the array object
+for (let i = 0; i < cards.length; i += 1) {
+  const section = document.createElement('section');
+  section.innerHTML = `
+<img src="${cards[i].img}" alt="${cards[i].alt}">
+<div>
+  <h2>${cards[i].title}</h2>
+  <ul>
+    <li>${cards[i].name}</li>
+    <li>${cards[i].desc1}</li>
+    <li>${cards[i].desc2}</li>
+  </ul>
+  <p>${cards[i].description}</p>
+  <ul id="lang">
+    <li>${cards[i].tech1}</li>
+    <li>${cards[i].tech2}</li>
+    <li>${cards[i].tech3}</li>
+  </ul>
+  <button class="btn">${cards[i].btn}</button>
+</div>`;
+  section.classList.add('card1');
+  action.appendChild(section);
+}
