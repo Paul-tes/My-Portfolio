@@ -27,13 +27,15 @@ body {
   padding: 5%;
 }
 
-.action .card1 button {
+.action .card1 button,
+.modal-seeLive-btn,
+.modal-seeSource-btn {
   background: none;
   color: #396df2;
   font: inherit;
   cursor: pointer;
   outline: inherit;
-  width: 8rem;
+  width: 9rem;
   padding: 0.6rem;
   border: 1px solid #396df2;
   border-radius: 0.4rem;
@@ -41,7 +43,9 @@ body {
 }
 
 .about button:hover,
-.action .card1 button:hover {
+.action .card1 button:hover,
+.modal-seeLive-btn:hover,
+.modal-seeSource-btn:hover {
   background-color: #6070ff;
   color: white;
   font-weight: 700;
@@ -119,7 +123,8 @@ header .home-links {
 }
 
 .section h1,
-.about h2 {
+.about h2,
+.modal-header-h2 {
   font-size: 2.2rem;
   font-weight: 700;
   color: #172b4d;
@@ -184,6 +189,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  mix-blend-mode: normal;
 }
 
 .contact-me img {
@@ -196,6 +202,7 @@ nav ul {
   width: 100%;
 }
 
+.pop-main h2,
 .action .card1 h2 {
   color: #172b4d;
   font-style: normal;
@@ -203,7 +210,10 @@ nav ul {
   font-size: 2.5rem;
 }
 
-.action .card1 ul {
+.pop-main ul,
+.action .card1 ul,
+.modal-first-ul,
+.modal-tech-list {
   display: flex;
   gap: 1rem;
   margin-top: 2%;
@@ -235,28 +245,33 @@ nav ul {
   font-size: 1rem;
 }
 
-.action .card1 ul:not(:first-of-type) li {
+.action .card1 ul:not(:first-of-type) li,
+.modal-tech-list-item {
   list-style: none;
   font-size: 0.7rem;
   padding: 4px 12px;
   align-items: center;
   color: #6070ff;
   background-color: #ebebff;
-  border-radius: 20%;
+  border-radius: 0.5rem;
 }
 
-.action .card1 ul:first-of-type li:not(:first-child) {
+.action .card1 ul:first-of-type li:not(:first-child),
+.modal-first-ul-child {
   color: #7a869a;
   margin-left: 1rem;
   list-style: disc;
 }
 
-.action .card1 ul:first-of-type li:first-child {
+.action .card1 ul:first-of-type li:first-child,
+.modal-first-ul-first-child {
   color: #344563;
   font-weight: 600;
 }
 
-.action .card1 p {
+.action .card1 p,
+.modal-content-p,
+.modal-content-p2 {
   color: #344563;
 }
 
@@ -365,11 +380,130 @@ nav ul {
   font-weight: 700;
 }
 
-.display-none {
+/* momdal style */
+
+/* modal backgrond */
+.modal {
+  position: fixed;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  display: flex;
+  position: fixed;
+  background-color: #fefefe;
+  margin-top: 1rem;
+  margin-left: 5%;
+  padding: 1rem;
+  width: 90%;
+  z-index: 2;
+  top: 0;
+  border: 1px solid #dfe1e6;
+  border-radius: 1rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal-content header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -2rem;
+}
+
+.modal-close {
+  font-size: 1.5rem;
+  margin-top: 1.9rem;
+  color: #67798e;
+}
+
+.modal-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+#see-live-icon {
+  margin-bottom: -0.4rem;
+  margin-left: 0.2rem;
+}
+
+[modal-close-btn] {
+  background: none;
+  border: none;
+  color: #67798e;
+  padding: 1rem;
+}
+
+.modal-content-p {
+  font-size: 13px;
+}
+
+.modal-content-p2 {
   display: none;
 }
 
+.modal-first-ul {
+  margin-top: -1rem;
+}
+
 @media (min-width: 768px) {
+  .modal-content {
+    height: 90%;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 3%;
+    overflow: scroll;
+    display: flex;
+  }
+
+  .modal-content-p2 {
+    display: block;
+  }
+
+  .modal-tech-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .modal-seciotn-bottom {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .modal-paragraphs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 60%;
+    margin-bottom: 5rem;
+  }
+
+  .modal-header-h2 {
+    font-size: 40px;
+  }
+
+  .modal-close {
+    font-size: 1.8rem;
+  }
+
+  .tech-and-btns {
+    width: 40%;
+  }
+
+  .modal-first-ul {
+    margin-bottom: -0.3rem;
+  }
+
   .container {
     background-image: url(./assets/images/header\ background\ shape-desktop.svg);
     background-repeat: no-repeat;
@@ -515,4 +649,12 @@ nav ul {
   .contact-me .submit-btn {
     margin: auto auto;
   }
+}
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
 }
