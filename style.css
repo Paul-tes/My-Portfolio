@@ -436,6 +436,17 @@ nav ul {
   margin-left: 0.2rem;
 }
 
+[modal-close-btn] {
+  background: none;
+  border: none;
+  color: #67798e;
+  padding: 1rem;
+}
+
+.modal-content-p {
+  font-size: 13px;
+}
+
 .modal-content-p2 {
   display: none;
 }
